@@ -10,7 +10,7 @@
         </header>
         <main>
             <ul class="pokedex-list">
-                <li class="grass poison">
+                <li class="pokemon grass type2-poison">
                 <img src="images/bulbasaur.png" alt="Bulbasaur">
                     <h2>Bulbasaur</h2>
                     <p><strong>Nº:</strong> 001</p>
@@ -23,7 +23,7 @@
                         Conforme seu corpo cresce, a semente também cresce.
                     </p>
                 </li>
-                <li class="grass poison">
+                <li class="pokemon grass type2-poison">
                     <img src="images/ivysaur.png" alt="ivysaur">
                     <h2>Ivysaur</h2>
                     <p><strong>Nº:</strong> 002</p>
@@ -36,46 +36,66 @@
                         permitindo que o broto em suas costas cresça mais.
                     </p>
                 </li>
-                <li class="grass poison">
-                    <img src="images/venusaur.png" alt="venusaur">
-                    <h2>Venusaur</h2>
-                    <p><strong>Nº:</strong> 003</p>
-                    <p><strong>Tipo:</strong> Planta / Venenoso</p>
-                    <p><strong>Peso:</strong> 100 kg</p>
-                    <p><strong>Altura:</strong> 2 m</p>
-                    <p class="descricao">
-                        <strong>Pokemon Bulbo:</strong><br>
-                        Enquanto se aquece no sol, ele pode converter a luz em energia.
-                        Como resultado, ele é mais potente no verão.
-                    </p>
+                <!-- venusaur -->
+                <li class="pokemon grass type2-poison">
+                    <!-- Inputs para selecionar a forma -->
+                    <label for="venu-form">Forma Basica</label>
+                    <input type="radio" id="venu-form" name="venusaur-form" checked>
+
+                    <label for="megavenu-form">Mega Venusaur</label>
+                    <input type="radio" id="megavenu-form" name="venusaur-form">
+
+                    <label for="maxvenu-form">Gigantamax Venusaur</label>
+                    <input type="radio" id="maxvenu-form" name="venusaur-form">
+
+                    <div id="venusaur-img">
+                        <img src="images/venusaur.png" class="venu">
+                        <img src="images/mega-venusaur.png" class="megavenu">
+                        <img src="images/gigantamax venusaur.png" class="maxvenu">
+                    </div>
+                    <div id="venusaur-desc">
+
+                
+                    <div id="venusaur-desc" class="pokemon grass type2-poison">
+                        <div id="desc-venu">
+                            <h2>Venusaur</h2>
+                            <p><strong>Nº:</strong> 003</p>
+                            <p><strong>Tipo:</strong> Planta / Venenoso</p>
+                            <p><strong>Peso:</strong> 100 kg</p>
+                            <p><strong>Altura:</strong> 2 m</p>
+                            <p class="descricao">
+                                <strong>Pokemon Bulbo:</strong><br>
+                                Enquanto se aquece no sol, ele pode converter a luz em energia.
+                                Como resultado, ele é mais potente no verão.
+                            </p>
+                        </div>
+                        <div id="desc-megavenu" class="pokemon grass type2-poison mega">
+                            <h2>Mega Venusaur</h2>
+                            <p><strong>Nº:</strong> 003</p>
+                            <p><strong>Tipo:</strong> Planta / Venenoso</p>
+                            <p><strong>Peso:</strong> 155,5 kg</p>
+                            <p><strong>Altura:</strong> 2,4 m</p>
+                            <p class="descricao">
+                                <strong>Pokemon Bulbo:</strong><br>
+                                Depois de um dia chuvoso, a flor em suas costas tem um 
+                                cheiro mais forte. O cheiro atrai outros Pokémon.
+                            </p>
+                        </div>
+                        <div id="desc-maxvenu" class="pokemon grass type2-poison gigantamax">
+                            <h2>Gigantamax Venusaur</h2>
+                            <p><strong>Nº:</strong> 003</p>
+                            <p><strong>Tipo:</strong> Planta / Venenoso</p>
+                            <p><strong>Peso:</strong> ??? kg</p>
+                            <p><strong>Altura:</strong> ??? m</p>
+                            <p class="descricao">
+                                <strong>Pokemon Bulbo:</strong><br>
+                                Grandes quantidades de pólen irrompem dele com a força de uma 
+                                erupção vulcânica. Inalar muito pólen pode causar desmaios.
+                            </p>
+                        </div>
+                    </div>
                 </li>
-                <li class="grass poison mega">
-                    <img src="images/mega-venusaur.png" alt="mega venusaur">
-                    <h2>Mega Venusaur</h2>
-                    <p><strong>Nº:</strong> 003</p>
-                    <p><strong>Tipo:</strong> Planta / Venenoso</p>
-                    <p><strong>Peso:</strong> 155,5 kg</p>
-                    <p><strong>Altura:</strong> 2,4 m</p>
-                    <p class="descricao">
-                        <strong>Pokemon Bulbo:</strong><br>
-                        Depois de um dia chuvoso, a flor em suas costas tem um 
-                        cheiro mais forte. O cheiro atrai outros Pokémon.
-                    </p>
-                </li>
-                <li class="grass poison gigantamax">
-                    <img src="images/gigantamax venusaur.png" alt="gigantamax venusaur">
-                    <h2>Gigantamax Venusaur</h2>
-                    <p><strong>Nº:</strong> 003</p>
-                    <p><strong>Tipo:</strong> Planta / Venenoso</p>
-                    <p><strong>Peso:</strong> ??? kg</p>
-                    <p><strong>Altura:</strong> ??? m</p>
-                    <p class="descricao">
-                        <strong>Pokemon Bulbo:</strong><br>
-                        Grandes quantidades de pólen irrompem dele com a força de uma 
-                        erupção vulcânica. Inalar muito pólen pode causar desmaios.
-                    </p>
-                </li>
-                <li class="fire">
+                <li class="pokemon fire">
                     <img src="images/Charmander.webp" alt="Charmander">
                     <h2>Charmander</h2>
                     <p><strong>Nº:</strong> 004</p>
@@ -89,7 +109,7 @@
                         de si mesmo. Se o Pokémon fica furioso, a chama queima ferozmente.
                     </p>
                 </li>
-                <li class="fire">
+                <li class="pokemon fire">
                     <img src="images/Charmeleon.png" alt="Charmeleon">
                     <h2>Charmeleon</h2>
                     <p><strong>Nº:</strong> 005</p>
@@ -103,7 +123,7 @@
                         Neste estado animado, a chama na ponta da cauda se inflama com uma cor branca azulada.
                     </p>
                 </li>
-                <li class="fire flying">
+                <li class="pokemon fire type2-flying">
                 <img src="images/charizard.png" alt="Charizard">
                 <h2>Charizard</h2>
                     <p><strong>Nº:</strong> 006</p>
@@ -118,7 +138,7 @@
                         mas fracos que ele
                     </p>
             </li>
-            <li class="fire dragon mega">
+            <li class="pokemon fire type2-dragon mega">
                 <img src="images/mega charizard x.png" alt="Mega Charizard X">
                 <h2>Mega Charizard X</h2>
                     <p><strong>Nº:</strong> 006</p>
@@ -131,7 +151,7 @@
                         com que ele fique preto e crie intensas chamas azuis.
                     </p>
             </li>
-            <li class="fire flying mega">
+            <li class="pokemon fire type2-flying mega">
                 <img src="images/mega charizard y.png" alt="Mega Charizard Y">
                 <h2>Mega Charizard Y</h2>
                     <p><strong>Nº:</strong> 006</p>
@@ -145,7 +165,7 @@
                         que as de um caça a jato.<br>
                     </p>
             </li>
-            <li class="fire flying gigantamax">
+            <li class="pokemon fire type2-flying gigantamax">
                 <img src="images/gigantamax charizard.png" alt="Gigantamax Charizard">
                 <h2>Charizard</h2>
                     <p><strong>Nº:</strong> 006</p>
@@ -159,7 +179,7 @@
                         ruge, essa temperatura sobe ainda mais.
                     </p>
             </li>
-            <li class="psychic">
+            <li class="pokemon psychic">
                 <img src="images/mew.png" alt="Mew">
                 <h2>Mew</h2>
                     <p><strong>Nº:</strong> 151</p>
@@ -173,7 +193,7 @@
                             passa despercebido sempre que alguém se aproxima dele. 
                         </p>
               </li>
-              <li class="electric">
+              <li class="pokemon electric">
                 <img src="images/pichu.png.png" alt="Pichu">
                <h2>Pichu</h2>
                     <p><strong>Nº:</strong> 172</p>
@@ -187,7 +207,7 @@
                         Você pode ouvir o estalar da eletricidade estática saindo deste Pokémon.
                 </p>
             </li>
-            <li class="dragon flying">
+            <li class="pokemon dragon type2-flying">
                 <img src="images/rayquaza.png" alt="Rayquasa">
                 <h2>Rayquasa</h2>
                     <p><strong>Nº:</strong> 384</p>
@@ -200,7 +220,7 @@
                         sobre como isso pôs fim ao confronto entre Kyogre e Groudon.
                 </p>
             </li>
-            <li class="steel psychic">
+            <li class="pokemon steel type2-psychic">
                 <img src="images/jirachi.png" alt="Jirachi">
                 <h2>Jirachi</h2>
                     <p><strong>Nº:</strong> 385</p>
@@ -214,7 +234,7 @@
                         perigo, ele lutará sem acordar.
                 </p>
             </li>
-            <li class="water">
+            <li class="pokemon water">
                 <img src="images/Manaphy.png" alt="Manaphy">
                 <h2>Manaphy</h2>
                     <p><strong>Nº:</strong> 490</p>
@@ -227,7 +247,7 @@
                         com qualquer tipo de Pokémon.
                 </p>
             </li>
-            <li class="psychic fire">
+            <li class="pokemon psychic type2-fire">
                 <img src="images/victini.png" alt="Victini">
                 <h2>Victini</h2>
                     <p><strong>Nº:</strong> 494</p>
@@ -240,7 +260,7 @@
                         transbordará de poder.
                 </p>
             </li>
-            <li class="water dark">
+            <li class="pokemon water type2-dark">
                     <img src="images/greninja.png" alt="Greninja">
                     <h2>Greninja</h2>
                     <p><strong>Nº:</strong> 658</p>
@@ -255,7 +275,7 @@
                         essas estrelas ninja são afiadas o suficiente para partir metal
                     </p>
                 </li>
-                <li class="electric">
+                <li class="pokemon electric">
                 <img src="images/zeraora.png" alt="Zeraora">
                 <h2>Zeraora</h2>
                     <p><strong>Nº:</strong> 807</p>
@@ -268,7 +288,7 @@
                         Mesmo que eles desviem do ataque, serão eletrocutados pelas faíscas voadoras
                 </p>
             </li>
-            <li class="dragon ghost">
+            <li class="pokemon dragon type2-ghost">
                 <img src="images/dragapult.png" alt="Dragapult">
                 <h2>Dragapult</h2>
                     <p><strong>Nº:</strong> 887</p>
@@ -282,7 +302,7 @@
                     </p>
                     </li>
                     <!-- basculegion -->
-                    <li class="water ghost">
+                    <li class="pokemon water type2-ghost">
                         <!-- Inputs para selecionar a forma -->
                         <label for="men-form">Macho</label>
                         <input type="radio" id="men-form" name="basculegion-form" checked>
@@ -298,7 +318,7 @@
 
                     
                         <div id="Basculegion-desc">
-                            <p id="desc-men">
+                            <div id="desc-men">
                                 <h2>Basculegion Macho</h2>
                                 <p><strong>Nº:</strong> 902</p>
                                 <p><strong>Tipo:</strong> Água / Fantasma</p>
@@ -309,7 +329,8 @@
                                     Este Pokémon está escondido nas almas de seus companheiros que 
                                     pereceram durante uma jornada punitiva até o rio onde nasceram.
                                 </p>
-                            <p id="desc-women">
+                            </div>
+                            <div id="desc-women">
                                 <h2>Basculegion Femea</h2>
                                 <p><strong>Nº:</strong> 902</p>
                                 <p><strong>Tipo:</strong> Água / Fantasma</p>
@@ -321,42 +342,41 @@
                                     seu controle. Quanto mais profunda a tristeza nas almas de seus
                                     amigos, mais pálido Basculegion se torna.
                                 </p>
+                            </div>
                         </div>
                     </li>
-                        </div>
                     <!-- Tatsugiri -->
-                    <li class="water dragon">
-                        <!-- Inputs para selecionar a forma -->
-                        <label for="curly-form">Forma Curly</label>
-                        <input type="radio" id="curly-form" name="tatsugiri-form" checked>
-                    
-                        <label for="droopy-form">Forma Droopy</label>
-                        <input type="radio" id="droopy-form" name="tatsugiri-form">
-                    
-                        <label for="stretchy-form">Forma Stretchy</label>
-                        <input type="radio" id="stretchy-form" name="tatsugiri-form">
-                    
-                        <!-- Imagens das formas -->
-                        <div id="tatsugiri-img">
-                            <img src="images/tatsugiri amarelo.png" alt="Tatsugiri Laranja" class="curly">
-                            <img src="images/tatsugiri rosa.png" alt="Tatsugiri Rosa" class="droopy">
-                            <img src="images/tatsugiri laranja.png" alt="Tatsugiri Amarelo" class="stretchy">
+                    <li class="pokemon water type2-dragon">
+                        <!-- Inputs para selecionar a forma --> 
+                         <label for="curly-form">Forma Curly</label> 
+                         <input type="radio" id="curly-form" name="tatsugiri-form" checked> 
+                         <label for="droopy-form">Forma Droopy</label> 
+                         <input type="radio" id="droopy-form" name="tatsugiri-form"> 
+                         <label for="stretchy-form">Forma Stretchy</label> 
+                         <input type="radio" id="stretchy-form" name="tatsugiri-form"> 
+                         <!-- Imagens das formas --> 
+                        <div id="tatsugiri-img"> 
+                            <img src="images/tatsugiri amarelo.png" alt="Tatsugiri Laranja" class="curly"> 
+                            <img src="images/tatsugiri rosa.png" alt="Tatsugiri Rosa" class="droopy"> 
+                            <img src="images/tatsugiri laranja.png" alt="Tatsugiri Amarelo" class="stretchy"> 
                         </div>
-                    
+
                         <div id="tatsugiri-desc">
-                            <p id="desc-curly">
-                                <h2>Tatsugiri Forma Curly:</h2>
+                            <div id="desc-curly">
+                                <h2>Tatsugiri Forma Curly</h2>
                                 <p><strong>Nº:</strong> 978</p>
                                 <p><strong>Tipo:</strong> Água / Dragão</p>
                                 <p><strong>Peso:</strong> 8 kg</p>
                                 <p><strong>Altura:</strong> 0,3 m</p>
                                 <p class="descricao">
                                     <strong>Pokemon Mimico:</strong><br>
-                                Este é um pequeno Pokémon dragão 
-                                vive dentro da foz do Dondozo para se proteger dos inimigos externos.
-                            </p>
-                            <p id="desc-droopy">
-                                <h2>Tatsugiri Forma Droopy:</h2>
+                                    Este é um pequeno Pokémon dragão 
+                                    vive dentro da foz do Dondozo para se proteger dos inimigos externos.
+                                </p>
+                            </div>
+
+                            <div id="desc-droopy">
+                                <h2>Tatsugiri Forma Droopy</h2>
                                 <p><strong>Nº:</strong> 978</p>
                                 <p><strong>Tipo:</strong> Água / Dragão</p>
                                 <p><strong>Peso:</strong> 8 kg</p>
@@ -366,9 +386,10 @@
                                     As diferentes cores e padrões desta espécie
                                     são aparentemente o resultado da mudança de Tatsugiri para se
                                     adequar às preferências da presa que atrai.
-                                </p>
-                            <p id="desc-stretchy">
-                                <h2>Tatsugiri Forma Stretchy:</h2>
+                            </div>
+
+                            <div id="desc-stretchy">
+                                <h2>Tatsugiri Forma Stretchy</h2>
                                 <p><strong>Nº:</strong> 978</p>
                                 <p><strong>Tipo:</strong> Água / Dragão</p>
                                 <p><strong>Peso:</strong> 8 kg</p>
@@ -377,7 +398,8 @@
                                     <strong>Pokemon Mimico:</strong><br>
                                     Pokémon pássaros são suas principais presas. 
                                     Pokémon sabe que é fraco, por isso caça com um parceiro.
-                                </p>
+                            </div>
+
                         </div>
                     </li>
                     
