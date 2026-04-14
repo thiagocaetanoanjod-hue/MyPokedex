@@ -243,6 +243,53 @@ body {
     display: block;
 }
 
+/*Charizard*/
+/* Esconder descrições */
+#desc-zard, #desc-megazardx, #desc-megazardy, #desc-maxzard {
+    display: none;
+}
+
+/* Esconder imagens */
+#charzard-img img {
+    display: none;
+    width: 150px;
+    height: auto;
+}
+
+/* Mostrar imagem */
+#zard-form:checked ~ #charzard-img .zard {
+    display: block;
+}
+
+#megazardx-form:checked ~ #charzard-img .megazardx {
+    display: block;
+}
+
+#megazardy-form:checked ~ #charzard-img .megazardy {
+    display: block;
+}
+
+#maxzard-form:checked ~ #charzard-img .maxzard {
+    display: block;
+}
+
+/* Mostrar descrição */
+#zard-form:checked ~ #charzard-desc #desc-zard {
+    display: block;
+}
+
+#megazardx-form:checked ~ #charzard-desc #desc-megazardx {
+    display: block;
+}
+
+#megazardy-form:checked ~ #charzard-desc #desc-megazardy {
+    display: block;
+}
+
+#maxzard-form:checked ~ #charzard-desc #desc-maxzard {
+    display: block;
+}
+
 /* Restante do código existente */
 header {
     background-color: aqua;
