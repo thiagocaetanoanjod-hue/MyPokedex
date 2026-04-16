@@ -15,6 +15,8 @@ body {
 }
 
 
+
+
 /* ========================= */
 /* Gigantamax Pokémon */
 /* ========================= */
@@ -250,43 +252,43 @@ body {
 }
 
 /* Esconder imagens */
-#charzard-img img {
+#charizard-img img {
     display: none;
     width: 150px;
     height: auto;
 }
 
 /* Mostrar imagem */
-#zard-form:checked ~ #charzard-img .zard {
+#zard-form:checked ~ #charizard-img .zard {
     display: block;
 }
 
-#megazardx-form:checked ~ #charzard-img .megazardx {
+#megazardx-form:checked ~ #charizard-img .megazardx {
     display: block;
 }
 
-#megazardy-form:checked ~ #charzard-img .megazardy {
+#megazardy-form:checked ~ #charizard-img .megazardy {
     display: block;
 }
 
-#maxzard-form:checked ~ #charzard-img .maxzard {
+#maxzard-form:checked ~ #charizard-img .maxzard {
     display: block;
 }
 
 /* Mostrar descrição */
-#zard-form:checked ~ #charzard-desc #desc-zard {
+#zard-form:checked ~ #charizard-desc #desc-zard {
     display: block;
 }
 
-#megazardx-form:checked ~ #charzard-desc #desc-megazardx {
+#megazardx-form:checked ~ #charizard-desc #desc-megazardx {
     display: block;
 }
 
-#megazardy-form:checked ~ #charzard-desc #desc-megazardy {
+#megazardy-form:checked ~ #charizard-desc #desc-megazardy {
     display: block;
 }
 
-#maxzard-form:checked ~ #charzard-desc #desc-maxzard {
+#maxzard-form:checked ~ #charizard-desc #desc-maxzard {
     display: block;
 }
 
@@ -345,3 +347,4 @@ h2 {
 .descricao {
     font-size: 0.9em;
 }
+
