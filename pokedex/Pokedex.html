@@ -54,9 +54,6 @@
                         <img src="images/gigantamax venusaur.png" class="maxvenu">
                     </div>
                     <div id="venusaur-desc">
-
-                
-                    <div id="venusaur-desc" class="pokemon grass type2-poison">
                         <div id="desc-venu">
                             <h2>Venusaur</h2>
                             <p><strong>Nº:</strong> 003</p>
@@ -69,7 +66,7 @@
                                 Como resultado, ele é mais potente no verão.
                             </p>
                         </div>
-                        <div id="desc-megavenu" class="pokemon grass type2-poison mega">
+                        <div id="desc-megavenu" class="mega">
                             <h2>Mega Venusaur</h2>
                             <p><strong>Nº:</strong> 003</p>
                             <p><strong>Tipo:</strong> Planta / Venenoso</p>
@@ -81,7 +78,7 @@
                                 cheiro mais forte. O cheiro atrai outros Pokémon.
                             </p>
                         </div>
-                        <div id="desc-maxvenu" class="pokemon grass type2-poison gigantamax">
+                        <div id="desc-maxvenu" class="gigantamax">
                             <h2>Gigantamax Venusaur</h2>
                             <p><strong>Nº:</strong> 003</p>
                             <p><strong>Tipo:</strong> Planta / Venenoso</p>
@@ -123,75 +120,98 @@
                         Neste estado animado, a chama na ponta da cauda se inflama com uma cor branca azulada.
                     </p>
                 </li>
+                <!-- charlizard -->
                 <li class="pokemon fire type2-flying">
-                <img src="images/charizard.png" alt="Charizard">
-                <h2>Charizard</h2>
-                    <p><strong>Nº:</strong> 006</p>
-                    <p><strong>Tipo:</strong> Fogo / Voador</p>
-                    <p><strong>Peso:</strong> 90,5 kg</p>
-                    <p><strong>Altura:</strong> 1,7 m</p>
-                    <p class="descricao">
-                        <strong>Pokemon Chamas:</strong><br>
-                        Charizard voa pelo céu à procura de oponentes poderosos.
-                        Aspira fogo de temperaturas tão altas que derrete qualquer coisa,
-                        entretanto, esse pokémon nunca virará seu hálito ardente em oponentes
-                        mas fracos que ele
-                    </p>
-            </li>
-            <li class="pokemon fire type2-dragon mega">
-                <img src="images/mega charizard x.png" alt="Mega Charizard X">
-                <h2>Mega Charizard X</h2>
-                    <p><strong>Nº:</strong> 006</p>
-                    <p><strong>Tipo:</strong> Fogo / Dragão</p>
-                    <p><strong>Peso:</strong> 100,7 kg</p>
-                    <p><strong>Altura:</strong> 1,7 m</p>
-                    <p class="descricao">
-                        <strong>Pokemon Chamas:</strong><br>
-                        O poder avassalador que preenche todo o seu corpo faz
-                        com que ele fique preto e crie intensas chamas azuis.
-                    </p>
-            </li>
-            <li class="pokemon fire type2-flying mega">
-                <img src="images/mega charizard y.png" alt="Mega Charizard Y">
-                <h2>Mega Charizard Y</h2>
-                    <p><strong>Nº:</strong> 006</p>
-                    <p><strong>Tipo:</strong> Fogo / Voador</p>
-                    <p><strong>Peso:</strong> 100,5 kg</p>
-                    <p><strong>Altura:</strong> 1,7 m</p>
-                    <p class="descricao">
-                        <strong>Pokemon Chamas:</strong><br>
-                        Seu vínculo com seu Trainer é a fonte de seu poder.
-                        Ele ostenta velocidade e manobrabilidade maiores
-                        que as de um caça a jato.<br>
-                    </p>
-            </li>
-            <li class="pokemon fire type2-flying gigantamax">
-                <img src="images/gigantamax charizard.png" alt="Gigantamax Charizard">
-                <h2>Charizard</h2>
-                    <p><strong>Nº:</strong> 006</p>
-                    <p><strong>Tipo:</strong> Fogo / Voador</p>
-                    <p><strong>Peso:</strong> ??? kg</p>
-                    <p><strong>Altura:</strong> ??? m</p>
-                    <p class="descricao">
-                        <strong>Pokemon Chamas:</strong><br>
-                        A chama dentro de seu corpo queima mais quente
-                        que 3.600 graus Fahrenheit. Quando Charizard
-                        ruge, essa temperatura sobe ainda mais.
-                    </p>
-            </li>
-            <li class="pokemon psychic">
-                <img src="images/mew.png" alt="Mew">
-                <h2>Mew</h2>
-                    <p><strong>Nº:</strong> 151</p>
-                    <p><strong>Tipo:</strong> Psíquico</p>
-                    <p><strong>Peso:</strong> 90,5 kg</p>
-                    <p><strong>Altura:</strong> 1,7 m</p>
-                    <p class="descricao">
-                        <strong>Pokemon Nova Espécie:</strong><br>
-                            Dizem que Mew possui o DNA de todos os Pokémon. 
-                            Ele pode ficar invisível sempre que quiser, por isso 
-                            passa despercebido sempre que alguém se aproxima dele. 
-                        </p>
+                    <!-- Inputs para selecionar a forma -->
+                    <label for="zard-form">Forma Basica</label>
+                    <input type="radio" id="zard-form" name="charizard-form" checked>
+
+                    <label for="megazardx-form">Mega Charizard X</label>
+                    <input type="radio" id="megazardx-form" name="charizard-form">
+
+                    <label for="megazardy-form">Mega Charizard Y</label>
+                    <input type="radio" id="megazardy-form" name="charizard-form">
+
+                    <label for="maxzard-form">Gigantamax Charizard</label>
+                    <input type="radio" id="maxzard-form" name="charizard-form">
+
+                    <div id="charizard-img">
+                        <img src="images/charizard.png" class="zard">
+                        <img src="images/mega charizard x.png" class="megazardx">
+                        <img src="images/mega charizard y.png" class="megazardy">
+                        <img src="images/gigantamax charizard.png" class="maxzard">
+                    </div>
+                    <div id="charizard-desc">
+
+                
+                    <div id="charizard-desc">
+                        <div id="desc-zard">
+                            <h2>Charizard</h2>
+                            <p><strong>Nº:</strong> 006</p>
+                            <p><strong>Tipo:</strong> Fogo / Voador</p>
+                            <p><strong>Peso:</strong> 90,5 kg</p>
+                            <p><strong>Altura:</strong> 1,7 m</p>
+                            <p class="descricao">
+                                <strong>Pokemon Chamas:</strong><br>
+                                Charizard voa pelo céu à procura de oponentes poderosos.
+                                Aspira fogo de temperaturas tão altas que derrete qualquer coisa,
+                                entretanto, esse pokémon nunca virará seu hálito ardente em oponentes
+                                mas fracos que ele
+                            </p>
+                        </div>
+                        <div id="desc-megazardx" class="pokemon fire type2-dragon mega">
+                            <h2>Mega Charizard X</h2>
+                            <p><strong>Nº:</strong> 006</p>
+                            <p><strong>Tipo:</strong> Fogo / Dragão</p>
+                            <p><strong>Peso:</strong> 100,7 kg</p>
+                            <p><strong>Altura:</strong> 1,7 m</p>
+                            <p class="descricao">
+                                <strong>Pokemon Chamas:</strong><br>
+                                O poder avassalador que preenche todo o seu corpo faz
+                                com que ele fique preto e crie intensas chamas azuis.
+                            </p>
+                        </div>
+                        <div id="desc-megazardy" class="mega">
+                            <h2>Mega Charizard Y</h2>
+                            <p><strong>Nº:</strong> 006</p>
+                            <p><strong>Tipo:</strong> Fogo / Voador</p>
+                            <p><strong>Peso:</strong> 100,5 kg</p>
+                            <p><strong>Altura:</strong> 1,7 m</p>
+                            <p class="descricao">
+                                <strong>Pokemon Chamas:</strong><br>
+                                Seu vínculo com seu Trainer é a fonte de seu poder.
+                                Ele ostenta velocidade e manobrabilidade maiores
+                                que as de um caça a jato.<br>
+                            </p>
+                        </div>
+                        <div id="desc-maxzard" class="gigantamax">
+                            <h2>Gigantamax Charizard</h2>
+                            <p><strong>Nº:</strong> 006</p>
+                            <p><strong>Tipo:</strong> Fogo / Voador</p>
+                            <p><strong>Peso:</strong> ??? kg</p>
+                            <p><strong>Altura:</strong> ??? m</p>
+                            <p class="descricao">
+                                <strong>Pokemon Chamas:</strong><br>
+                                A chama dentro de seu corpo queima mais quente
+                                que 3.600 graus Fahrenheit. Quando Charizard
+                                ruge, essa temperatura sobe ainda mais.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="pokemon psychic">
+                    <img src="images/mew.png" alt="Mew">
+                    <h2>Mew</h2>
+                        <p><strong>Nº:</strong> 151</p>
+                        <p><strong>Tipo:</strong> Psíquico</p>
+                        <p><strong>Peso:</strong> 90,5 kg</p>
+                        <p><strong>Altura:</strong> 1,7 m</p>
+                        <p class="descricao">
+                            <strong>Pokemon Nova Espécie:</strong><br>
+                                Dizem que Mew possui o DNA de todos os Pokémon. 
+                                Ele pode ficar invisível sempre que quiser, por isso 
+                                passa despercebido sempre que alguém se aproxima dele. 
+                            </p>
               </li>
               <li class="pokemon electric">
                 <img src="images/pichu.png.png" alt="Pichu">
