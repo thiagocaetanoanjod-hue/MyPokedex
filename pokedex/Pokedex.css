@@ -29,6 +29,15 @@ body {
 
 
 .pokemon {
+    max-height: 150px; /*Altura para mostrar só a imagem e nome*/
+    overflow: hidden; /*Esconde o resto*/
+    transition: max-width 0.6s ease-in-out, box-shadow 0.3s ease; /*Animação pra crescer*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px; /*Borda arredondada*/
+    position: relative;
+    cursor: pointer; /*Mostra que é clicavel*/
     --cor1: #ccc;
     --cor2: var(--cor1);
     --text: #000;
@@ -36,6 +45,28 @@ body {
     background: linear-gradient(90deg, var(--cor1) 50%, var(--cor2) 50%);
     color: var(--text);
 }
+
+.pokemon:hover{
+    max-height: 1000px; /*Tamanho grande para aparecer tudo*/
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /*Sombra*/
+    z-index: 10;/*Garante que cresça e fique em cima dos outros*/
+}
+
+.pokemon p, .pokemon label, .pokemon .form-buttons, .pokemon .descricao{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.pokemon:hover p, .pokemon:hover label, .pokemon:hover .form-buttons, .pokemon:hover .descricao{
+    opacity: 1;
+    transition-delay: 0.2s; /*Revela o texto só quando o card abrir*/
+}
+
+.pokemon input[type="radio"]{
+    display: none;
+}
+
+
 
 .normal   { --cor1: #e2e2e2; }
 .fire     { --cor1: #ff6961; }
@@ -220,15 +251,15 @@ body {
 }
 
 /* Mostrar imagem */
-#venu-form:checked ~ #venusaur-img .venu {
+#venu-form:checked ~ .pkm-header #venusaur-img .venu {
     display: block;
 }
 
-#megavenu-form:checked ~ #venusaur-img .megavenu {
+#megavenu-form:checked ~ .pkm-header #venusaur-img .megavenu {
     display: block;
 }
 
-#maxvenu-form:checked ~ #venusaur-img .maxvenu {
+#maxvenu-form:checked ~ .pkm-header #venusaur-img .maxvenu {
     display: block;
 }
 
