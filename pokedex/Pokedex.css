@@ -290,23 +290,23 @@ body {
 }
 
 /* Mostrar imagem */
-#zard-form:checked ~ #charizard-img .zard {
+#zard-form:checked ~ .pkm-header #charizard-img .zard {
     display: block;
 }
 
-#megazardx-form:checked ~ #charizard-img .megazardx {
+#megazardx-form:checked ~ .pkm-header #charizard-img .megazardx {
     display: block;
 }
 
-#megazardy-form:checked ~ #charizard-img .megazardy {
+#megazardy-form:checked ~ .pkm-header #charizard-img .megazardy {
     display: block;
 }
 
-#maxzard-form:checked ~ #charizard-img .maxzard {
+#maxzard-form:checked ~ .pkm-header #charizard-img .maxzard {
     display: block;
 }
 
-/* Mostrar descrição */
+/* Mostrar descrição*/
 #zard-form:checked ~ #charizard-desc #desc-zard {
     display: block;
 }
@@ -378,4 +378,3 @@ h2 {
 .descricao {
     font-size: 0.9em;
 }
-
