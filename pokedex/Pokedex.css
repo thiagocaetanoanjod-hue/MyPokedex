@@ -31,9 +31,10 @@ body {
 .pokemon {
     max-height: 150px; /*Altura para mostrar só a imagem e nome*/
     overflow: hidden; /*Esconde o resto*/
-    transition: max-width 0.6s ease-in-out, box-shadow 0.3s ease; /*Animação pra crescer*/
+    transition: max-width 0.5s ease-in-out, box-shadow 0.7s ease; /*Animação pra crescer*/
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     border-radius: 15px; /*Borda arredondada*/
     position: relative;
@@ -54,7 +55,7 @@ body {
 
 .pokemon p, .pokemon label, .pokemon .form-buttons, .pokemon .descricao{
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.7s ease-in-out;
 }
 
 .pokemon:hover p, .pokemon:hover label, .pokemon:hover .form-buttons, .pokemon:hover .descricao{
@@ -129,70 +130,32 @@ body {
 
 
 /*Tatsugiri*/
-/* Esconder todas as descrições por padrão */
-#desc-curly, #desc-droopy, #desc-stretchy {
+/* Esconder descrições */
+#desc-curly, #desc-stretchy, #desc-droopy {
     display: none;
 }
 
-/* Mostrar as descrições de acordo com o tipo de forma selecionado */
-#curly-form:checked ~ #tatsugiri-img {
-    background-image: url('tatsugiri_laranja.png');
-}
-
-#droopy-form:checked ~ #tatsugiri-img {
-    background-image: url('tatsugiri_rosa.png');
-}
-
-#stretchy-form:checked ~ #tatsugiri-img {
-    background-image: url('tatsugiri_amarelo.png');
-}
-
-#tatsugiri-desc {
-    text-align: center; /* Centraliza o texto da descrição */
-}
-
-#tatsugiri-img {
-    display: flex; /* Usamos flexbox para facilitar o alinhamento */
-    justify-content: center; /* Centraliza as imagens horizontalmente */
-    align-items: center; /* Alinha as imagens verticalmente */
-    margin-top: 20px; /* Adiciona um pouco de espaçamento acima da imagem */
-}
-
+/* Esconder imagens */
 #tatsugiri-img img {
-    display: none; /* Esconde todas as imagens por padrão */
-    width: 100px; /* Ajuste o tamanho conforme necessário */
+    display: none;
+    width: 150px;
     height: auto;
 }
 
-#curly-form:checked ~ #tatsugiri-img .curly {
-    display: block; /* Exibe a forma Curly quando selecionada */
-    background-image: url('tatsugiri_laranja.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#droopy-form:checked ~ #tatsugiri-img .droopy {
-    display: block; /* Exibe a forma Droopy quando selecionada */
-    background-image: url('tatsugiri_rosa.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#stretchy-form:checked ~ #tatsugiri-img .stretchy {
-    display: block; /* Exibe a forma Stretchy quando selecionada */
-    background-image: url('tatsugiri_amarelo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-/* Exibindo as descrições dependendo da seleção do tipo */
-#curly-form:checked ~ #tatsugiri-desc #desc-curly {
+/* Mostrar imagem */
+#droopy-form:checked ~ .pkm-header #tatsugiri-img .droopy {
     display: block;
 }
 
+#stretchy-form:checked ~ .pkm-header #tatsugiri-img .stretchy {
+    display: block;
+}
+
+#curly-form:checked ~ .pkm-header #tatsugiri-img .curly {
+    display: block;
+}
+
+/* Mostrar descrição */
 #droopy-form:checked ~ #tatsugiri-desc #desc-droopy {
     display: block;
 }
@@ -201,9 +164,8 @@ body {
     display: block;
 }
 
-/* Esconder as outras descrições */
-#desc-curly, #desc-droopy, #desc-stretchy {
-    display: none;
+#curly-form:checked ~ #tatsugiri-desc #desc-curly {
+    display: block;
 }
 
 /*Basculegion*/
@@ -220,11 +182,11 @@ body {
 }
 
 /* Mostrar imagem */
-#men-form:checked ~ #basculegion-img .men {
+#men-form:checked ~ .pkm-header #basculegion-img .men {
     display: block;
 }
 
-#women-form:checked ~ #basculegion-img .women {
+#women-form:checked ~ .pkm-header #basculegion-img .women {
     display: block;
 }
 
@@ -373,8 +335,14 @@ footer {
 
 h2 {
     margin: 5px 0;
+    border-bottom: 2px solid #C12225;
+    padding-bottom: 5px;
 }
 
 .descricao {
     font-size: 0.9em;
+}
+
+html {
+    scroll-behavior: smooth;
 }
