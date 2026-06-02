@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="Pokedex.css">
+        <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Pokédex</title>
         <link rel="icon" href="images/Pokeball-icon.png">
+        <link rel="stylesheet" type="text/css" href="Pokedex.css">
     </head>
     <body>
         <header>
             <h1>Pokedex</h1>
-            <nav>
+            <nav aria-label="Navegação da Pokédex">
             <a href="#kanto">Kanto</a>
             <a href="#johto">Johto</a>
             <a href="#hoenn">Hoenn</a>
@@ -22,10 +24,10 @@
         </header>
         
         <main>
-            <br><h2 id="kanto">Kanto</h2>
+            <h2 id="kanto">Kanto</h2>
             <ul class="pokedex-list">
                 <li class="pokemon grass type2-poison">
-                <img src="images/bulbasaur.png" alt="Bulbasaur">
+                <img src="images/bulbasaur.png" alt="Bulbasaur" loading="lazy">
                     <h2>Bulbasaur</h2>
                     <p><strong>Nº:</strong> 001</p>
                     <p><strong>Tipo:</strong> Planta / Venenoso</p>
@@ -38,7 +40,7 @@
                     </p>
                 </li>
                 <li class="pokemon grass type2-poison">
-                    <img src="images/ivysaur.png" alt="ivysaur">
+                    <img src="images/ivysaur.png" alt="ivysaur" loading="lazy">
                     <h2>Ivysaur</h2>
                     <p><strong>Nº:</strong> 002</p>
                     <p><strong>Tipo:</strong> Planta / Venenoso</p>
@@ -58,9 +60,9 @@
 
                     <div class="pkm-header">
                     <div id="venusaur-img">
-                        <img src="images/venusaur.png" class="venu">
-                        <img src="images/mega-venusaur.png" class="megavenu">
-                        <img src="images/gigantamax venusaur.png" class="maxvenu">
+                        <img src="images/venusaur.png" class="venu" alt="venusaur" loading="lazy">
+                        <img src="images/mega-venusaur.png" class="megavenu" alt="mega venusaur" loading="lazy">
+                        <img src="images/gigantamax venusaur.png" class="maxvenu" alt="Gigantamax venusaur" loading="lazy">
                     </div>
                     <h2>Venusaur</h2>
                     <p><strong>Nº:</strong> 003</p>
@@ -113,7 +115,7 @@
                     </div>
                 </li>
                 <li class="pokemon fire">
-                    <img src="images/charmander.png" alt="Charmander">
+                    <img src="images/charmander.png" alt="Charmander" loading="lazy">
                     <h2>Charmander</h2>
                     <p><strong>Nº:</strong> 004</p>
                     <p><strong>Tipo:</strong> Fogo</p>
@@ -127,7 +129,7 @@
                     </p>
                 </li>
                 <li class="pokemon fire">
-                    <img src="images/Charmeleon.png" alt="Charmeleon">
+                    <img src="images/Charmeleon.png" alt="Charmeleon" loading="lazy">
                     <h2>Charmeleon</h2>
                     <p><strong>Nº:</strong> 005</p>
                     <p><strong>Tipo:</strong> Fogo</p>
@@ -149,10 +151,10 @@
 
                     <div class="pkm-header">
                     <div id="charizard-img">
-                        <img src="images/charizard.png" class="zard">
-                        <img src="images/mega charizard x.png" class="megazardx">
-                        <img src="images/mega charizard y.png" class="megazardy">
-                        <img src="images/gigantamax charizard.png" class="maxzard">
+                        <img src="images/charizard.png" class="zard" alt="Charizard">
+                        <img src="images/mega charizard x.png" class="megazardx" alt="mega Charizard X" loading="lazy">
+                        <img src="images/mega charizard y.png" class="megazardy" alt="mega Charizard Y" loading="lazy">
+                        <img src="images/gigantamax charizard.png" class="maxzard" alt="Gigantamax Charizard" loading="lazy">
                     </div>
                     <h2>Charizard</h2>
                     <p><strong>Nº:</strong> 003</p>
@@ -220,7 +222,7 @@
                     </div>
                 </li>
                 <li class="pokemon psychic">
-                    <img src="images/mew.png" alt="Mew">
+                    <img src="images/mew.png" alt="Mew" loading="lazy">
                     <h2>Mew</h2>
                         <p><strong>Nº:</strong> 151</p>
                         <p><strong>Tipo:</strong> Psíquico</p>
@@ -233,9 +235,11 @@
                                 passa despercebido sempre que alguém se aproxima dele. 
                             </p>
               </li>
-              <br><h2 id="johto">Johto</h2>
+            </ul>
+            <h2 id="johto">Johto</h2>
+            <ul class="pokedex-list">
               <li class="pokemon electric">
-                <img src="images/pichu.png.png" alt="Pichu">
+                <img src="images/pichu.png.png" alt="Pichu" loading="lazy">
                <h2>Pichu</h2>
                     <p><strong>Nº:</strong> 172</p>
                     <p><strong>Tipo:</strong> Eletrico</p>
@@ -248,9 +252,11 @@
                         Você pode ouvir o estalar da eletricidade estática saindo deste Pokémon.
                 </p>
             </li>
-            <br><h2 id="hoenn">Hoenn</h2>
+            </ul>
+            <h2 id="hoenn">Hoenn</h2>
+            <ul class="pokedex-list">
             <li class="pokemon dragon type2-flying">
-                <img src="images/rayquaza.png" alt="Rayquasa">
+                <img src="images/rayquaza.png" alt="Rayquasa" loading="lazy">
                 <h2>Rayquasa</h2>
                     <p><strong>Nº:</strong> 384</p>
                     <p><strong>Tipo:</strong> Dragão / Voador</p>
@@ -263,7 +269,7 @@
                 </p>
             </li>
             <li class="pokemon steel type2-psychic">
-                <img src="images/jirachi.png" alt="Jirachi">
+                <img src="images/jirachi.png" alt="Jirachi" loading="lazy">
                 <h2>Jirachi</h2>
                     <p><strong>Nº:</strong> 385</p>
                     <p><strong>Tipo:</strong> Metal / Psíquico</p>
@@ -276,9 +282,11 @@
                         perigo, ele lutará sem acordar.
                 </p>
             </li>
-            <br><h2 id="sinnoh">Sinnoh</h2>
+            </ul>
+            <h2 id="sinnoh">Sinnoh</h2>
+            <ul class="pokedex-list">
             <li class="pokemon water">
-                <img src="images/Manaphy.png" alt="Manaphy">
+                <img src="images/Manaphy.png" alt="Manaphy" loading="lazy">
                 <h2>Manaphy</h2>
                     <p><strong>Nº:</strong> 490</p>
                     <p><strong>Tipo:</strong> Água</p>
@@ -290,9 +298,11 @@
                         com qualquer tipo de Pokémon.
                 </p>
             </li>
-            <br><h2 id="unova">Unova</h2>
+            </ul>
+            <h2 id="unova">Unova</h2>
+            <ul class="pokedex-list">
             <li class="pokemon fire type2-psychic">
-                <img src="images/victini.png" alt="Victini">
+                <img src="images/victini.png" alt="Victini" loading="lazy">
                 <h2>Victini</h2>
                     <p><strong>Nº:</strong> 494</p>
                     <p><strong>Tipo:</strong> Fogo / Psíquico</p>
@@ -304,9 +314,11 @@
                         transbordará de poder.
                 </p>
             </li>
-            <br><h2 id="kalos">Kalos</h2>
+            </ul>
+            <h2 id="kalos">Kalos</h2>
+            <ul class="pokedex-list">
             <li class="pokemon water type2-dark">
-                    <img src="images/greninja.png" alt="Greninja">
+                    <img src="images/greninja.png" alt="Greninja" loading="lazy">
                     <h2>Greninja</h2>
                     <p><strong>Nº:</strong> 658</p>
                     <p><strong>Tipo:</strong> Água / Sombrio</p>
@@ -320,9 +332,11 @@
                         essas estrelas ninja são afiadas o suficiente para partir metal
                     </p>
                 </li>
+                </ul>
             <br><h2 id="alola">Alola</h2>
+            <ul class="pokedex-list">
             <li class="pokemon electric">
-            <img src="images/zeraora.png" alt="Zeraora">
+            <img src="images/zeraora.png" alt="Zeraora" loading="lazy">
             <h2>Zeraora</h2>
                 <p><strong>Nº:</strong> 807</p>
                 <p><strong>Tipo:</strong> Eletrico</p>
@@ -334,9 +348,11 @@
                     Mesmo que eles desviem do ataque, serão eletrocutados pelas faíscas voadoras
                 </p>
             </li>
-            <br><h2 id="galar">Galar</h2>
+            </ul>
+            <h2 id="galar">Galar</h2>
+            <ul class="pokedex-list">
             <li class="pokemon dragon type2-ghost">
-                <img src="images/dragapult.png" alt="Dragapult">
+                <img src="images/dragapult.png" alt="Dragapult" loading="lazy">
                 <h2>Dragapult</h2>
                     <p><strong>Nº:</strong> 887</p>
                     <p><strong>Tipo:</strong> Dragão / Fantasma</p>
@@ -348,7 +364,9 @@
                         Assim que a luta começa, ele lança os Dreepy como mísseis supersônicos.
                     </p>
             </li>
-            <br><h2 id="hisui">Hisui</h2>
+            </ul>
+            <h2 id="hisui">Hisui</h2>
+            <ul class="pokedex-list">
             <!-- basculegion -->
             <li class="pokemon water type2-ghost">
                 <input type="radio" id="men-form" name="basculegion-form" checked>
@@ -356,8 +374,8 @@
 
                 <div class="pkm-header">
                     <div id="basculegion-img">
-                    <img src="images/Basculegion macho.png" class="men">
-                    <img src="images/Basculegion femea.png" class="women">
+                    <img src="images/Basculegion macho.png" class="men" alt="Basculegion Macho" loading="lazy">
+                    <img src="images/Basculegion femea.png" class="women" alt="Basculegion Femea" loading="lazy">
                     </div>  
                 </div>
 
@@ -399,7 +417,9 @@
                     </div>
                 </div>
             </li>
-            <br><h2 id="paldeia">Paldeia</h2>
+            </ul>
+            <h2 id="paldeia">Paldeia</h2>
+            <ul class="pokedex-list">
             <!-- Tatsugiri -->
             <li class="pokemon water type2-dragon">
             <input type="radio" id="curly-form" name="tatsugiri-form" checked> 
@@ -408,9 +428,9 @@
 
             <div class="pkm-header">
             <div id="tatsugiri-img">
-                <img src="images/tatsugiri amarelo.png" alt="Tatsugiri Laranja" class="curly"> 
-                <img src="images/tatsugiri rosa.png" alt="Tatsugiri Rosa" class="droopy"> 
-                <img src="images/tatsugiri laranja.png" alt="Tatsugiri Amarelo" class="stretchy"> 
+                <img src="images/tatsugiri amarelo.png" alt="Tatsugiri Laranja" class="curly" loading="lazy"> 
+                <img src="images/tatsugiri rosa.png" alt="Tatsugiri Rosa" class="droopy" loading="lazy"> 
+                <img src="images/tatsugiri laranja.png" alt="Tatsugiri Amarelo" class="stretchy" loading="lazy"> 
             </div>
             <h2>Tatsugiri</h2>
             <p><strong>Nº:</strong> 978</p>
