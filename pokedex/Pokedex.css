@@ -26,8 +26,6 @@ body {
     border-image: linear-gradient(45deg, #ff69b4, #ff1493, #ffe4e1) 1;
 }
 
-
-
 .pokemon {
     max-height: 150px; /*Altura para mostrar só a imagem e nome*/
     overflow: hidden; /*Esconde o resto*/
@@ -42,7 +40,6 @@ body {
     --cor1: #ccc;
     --cor2: var(--cor1);
     --text: #000;
-
     background: linear-gradient(90deg, var(--cor1) 50%, var(--cor2) 50%);
     color: var(--text);
 }
@@ -346,3 +343,27 @@ h2 {
 html {
     scroll-behavior: smooth;
 }
+
+:target{
+    scroll-margin-top: 100px;
+    outline: 3px solid #C12225;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+input[type="radio"]:checked + label {
+    background: #C12225;
+    color: white;
+}
+
+/* Quando o usuário navegar pelo teclado (Tab), o label ganha um contorno para mostrar onde ele está */
+input[type="radio"]:focus + label {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
