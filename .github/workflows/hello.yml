@@ -17,4 +17,4 @@ jobs:
       - name: Executando primeiro comando
         run: |
           ls -l
-          echo "Fim do PROCESSO
+          echo "Fim do PROCESSO"
