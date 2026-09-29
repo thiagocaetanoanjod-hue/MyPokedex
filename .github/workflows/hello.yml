@@ -65,4 +65,4 @@ jobs:
         with:
           file: dockerfile
           push: true
-          tags: rezin/img_revolucao:1.0
+          tags: reozin/img_revolucao:1.0
