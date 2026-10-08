@@ -89,14 +89,6 @@ body {
 .ghost    { --cor1: #5e4d75; }
 
 
-.fighting,
-.poison,
-.rock,
-.dragon,
-.dark {
-    --text: #fff;
-}
-
 
 .type2-normal   { --cor2: #9fa17b; }
 .type2-fire     { --cor2: #e97233; }
@@ -117,17 +109,6 @@ body {
 .type2-steel    { --cor2: #a5a1c0; }
 .type2-fairy    { --cor2: #e493b8; }
 
-[class*="type2-dark"],
-[class*="type2-dragon"],
-[class*="type2-rock"],
-[class*="type2-poison"],
-[class*="type2-fighting"] {
-    --text: #fff;
-}
-
-.flying.type2-dragon, .dragon.type2-flying {
-    --text: red;
-}
 
 
 /*Tatsugiri*/
@@ -424,3 +405,7 @@ input[type="radio"]:focus + label {
     border-radius: 15px;
 }
 
+.text-pkm{
+    background-color: white;
+    color: #000;
+}
