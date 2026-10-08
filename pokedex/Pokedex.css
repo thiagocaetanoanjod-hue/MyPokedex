@@ -42,6 +42,9 @@ body {
     --text: #000;
     background: linear-gradient(90deg, var(--cor1) 50%, var(--cor2) 50%);
     color: var(--text);
+    text-align: center;
+    border: 1px solid #c01f9f;
+    padding: 10px;
 }
 
 .pokemon:hover{
@@ -282,8 +285,59 @@ body {
     display: block;
 }
 
+.pokemon:has(#zard-form:checked) {
+    --cor1: #ff6961;
+    --cor2: #cfe8ffe0;
+    --text: #000;
+    border: 1px solid #c01f9f;
+}
+
+.pokemon:has(#megazardx-form:checked) {
+    --cor1: #ff6961;
+    --cor2: #713bd4;
+    --text: #fff;
+
+    border: 5px solid transparent;
+    border-image: linear-gradient(
+        45deg,
+        #32cd32,
+        #1e90ff,
+        #ff69b4,
+        #ffd700
+    ) 1;
+}
+
+.pokemon:has(#megazardy-form:checked) {
+    --cor1: #ff6961;
+    --cor2: #cfe8ffe0;
+    --text: #000;
+
+    border: 5px solid transparent;
+    border-image: linear-gradient(
+        45deg,
+        #32cd32,
+        #1e90ff,
+        #ff69b4,
+        #ffd700
+    ) 1;
+}
+
+.pokemon:has(#maxzard-form:checked) {
+    --cor1: #ff6961;
+    --cor2: #cfe8ffe0;
+    --text: #000;
+
+    border: 5px solid transparent;
+    border-image: linear-gradient(
+        45deg,
+        #ff69b4,
+        #ff1493,
+        #ffe4e1
+    ) 1;
+}
+
 /* Restante do código existente */
-header {
+.site-header {
     background-color: aqua;
     text-align: center;
     padding: 20px;
@@ -308,12 +362,6 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 20px;
-}
-
-li {
-    text-align: center;
-    border: 1px solid #c01f9f;
-    padding: 10px;
 }
 
 img {
@@ -365,5 +413,13 @@ input[type="radio"]:checked + label {
 input[type="radio"]:focus + label {
     outline: 2px solid #000;
     outline-offset: 2px;
+}
+
+.form-description {
+    background: linear-gradient(90deg, var(--cor1) 50%, var(--cor2) 50%);
+    color: var(--text);
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
 }
 
