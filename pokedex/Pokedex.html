@@ -1,497 +1,425 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>Pokédex</title>
-        <link rel="icon" href="images/Pokeball-icon.png">
-        <link rel="stylesheet" type="text/css" href="Pokedex.css">
-    </head>
-    <body>
-        <header>
-            <h1>Pokedex</h1>
-            <nav aria-label="Navegação da Pokédex">
-            <a href="#kanto">Kanto</a>
-            <a href="#johto">Johto</a>
-            <a href="#hoenn">Hoenn</a>
-            <a href="#sinnoh">Sinnoh</a>
-            <a href="#unova">Unova</a>
-            <a href="#kalos">Kalos</a>
-            <a href="#alola">Alola</a>
-            <a href="#galar">Galar</a>
-            <a href="#hisui">Hisui</a>
-            <a href="#paldeia">Paldeia</a>
-        </nav>
-        </header>
-        
-        <main>
-            <h2 id="kanto">Kanto</h2>
-            <ul class="pokedex-list">
-                <article class="pokemon" data-name="Bulbasaur" data-type="grass poison">
-                <img src="images/bulbasaur.png" alt="Bulbasaur" loading="lazy">
-                    <h2>Bulbasaur</h2>
-                    <p><strong>Nº:</strong> 001</p>
-                    <p><strong>Tipo:</strong> Planta / Venenoso</p>
-                    <p><strong>Peso:</strong> 6,9 kg</p>
-                    <p><strong>Altura:</strong> 0,7 m</p>
-                    <p class="descricao">
-                        <strong>Pokemon Bulbo:</strong><br>
-                        Ele carrega uma semente nas costas desde o nascimento.
-                        Conforme seu corpo cresce, a semente também cresce.
-                    </p>
-                </article>
-                <article class="pokemon" data-name="Ivysaur" data-type="grass poison">
-                    <img src="images/ivysaur.png" alt="ivysaur" loading="lazy">
-                    <h2>Ivysaur</h2>
-                    <p><strong>Nº:</strong> 002</p>
-                    <p><strong>Tipo:</strong> Planta / Venenoso</p>
-                    <p><strong>Peso:</strong> 13 kg</p>
-                    <p><strong>Altura:</strong> 1 m</p>
-                    <p class="descricao">
-                        <strong>Pokemon Bulbo:</strong><br>
-                        Quanto mais luz solar Ivysaur recebe, mais força brota dentro dele,
-                        permitindo que o broto em suas costas cresça mais.
-                    </p>
-                </article>
-                <!-- venusaur -->
-                <article class="pokemon" data-name="Venusaur" data-type="grass poison">
-                    <input type="radio" id="venu-form" name="venusaur-form" checked>
-                    <input type="radio" id="megavenu-form" name="venusaur-form">
-                    <input type="radio" id="maxvenu-form" name="venusaur-form">
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 30, 0);
+}
 
-                    <div class="pkm-header">
-                    <div id="venusaur-img">
-                        <img src="images/venusaur.png" class="venu" alt="venusaur" loading="lazy">
-                        <img src="images/mega-venusaur.png" class="megavenu" alt="mega venusaur" loading="lazy">
-                        <img src="images/gigantamax venusaur.png" class="maxvenu" alt="Gigantamax venusaur" loading="lazy">
-                    </div>
-                    <h2>Venusaur</h2>
-                    <p><strong>Nº:</strong> 003</p>
+/* ========================= */
+/* Mega Pokémon */
+/* ========================= */
 
-                </div>
-                <div class="form-buttons">
-                    <!-- Inputs para selecionar a forma -->
-                    <label for="venu-form">Forma Basica</label><br>
-
-                    <label for="megavenu-form">Mega Venusaur</label><br>
-
-                    <label for="maxvenu-form">Gigantamax Venusaur</label>
-                </div>
-
-                    <div id="venusaur-desc">
-                        <div id="desc-venu">
-                            <p><strong>Tipo:</strong> Planta / Venenoso</p>
-                            <p><strong>Peso:</strong> 100 kg</p>
-                            <p><strong>Altura:</strong> 2 m</p>
-                            <p class="descricao">
-                                <strong>Pokemon Bulbo:</strong><br>
-                                Enquanto se aquece no sol, ele pode converter a luz em energia.
-                                Como resultado, ele é mais potente no verão.
-                            </p>
-                        </div>
-                        <div id="desc-megavenu" class="mega">
-                            <h3><strong>Forma: </strong>Mega</h3>
-                            <p><strong>Nº:</strong> 003</p>
-                            <p><strong>Tipo:</strong> Planta / Venenoso</p>
-                            <p><strong>Peso:</strong> 155,5 kg</p>
-                            <p><strong>Altura:</strong> 2,4 m</p>
-                            <p class="descricao">
-                                <strong>Pokemon Bulbo:</strong><br>
-                                Depois de um dia chuvoso, a flor em suas costas tem um 
-                                cheiro mais forte. O cheiro atrai outros Pokémon.
-                            </p>
-                        </div>
-                        <div id="desc-maxvenu" class="gigantamax">
-                            <h3><strong>Forma: </strong>Gigantamax</h3>
-                            <p><strong>Nº:</strong> 003</p>
-                            <p><strong>Tipo:</strong> Planta / Venenoso</p>
-                            <p><strong>Peso:</strong> ??? kg</p>
-                            <p><strong>Altura:</strong> ??? m</p>
-                            <p class="descricao">
-                                <strong>Pokemon Bulbo:</strong><br>
-                                Grandes quantidades de pólen irrompem dele com a força de uma 
-                                erupção vulcânica. Inalar muito pólen pode causar desmaios.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-                <article class="pokemon" data-name="Charmander" data-type="fire">
-                    <img src="images/charmander.png" alt="Charmander" loading="lazy">
-                    <h2>Charmander</h2>
-                    <p><strong>Nº:</strong> 004</p>
-                    <p><strong>Tipo:</strong> Fogo</p>
-                    <p><strong>Peso:</strong> 8,5 kg</p>
-                    <p><strong>Altura:</strong> 0,6 m</p>
-                    <p class="descricao">
-                        <strong>Pokemon Lagarto:</strong><br>
-                        A chama que arde na ponta da cauda é uma indicação das 
-                        suas emoções. A chama vacila quando Charmander está desfrutando 
-                        de si mesmo. Se o Pokémon fica furioso, a chama queima ferozmente.
-                    </p>
-                </article>
-                <article class="pokemon" data-name="Charmeleon" data-type="fire">
-                    <img src="images/Charmeleon.png" alt="Charmeleon" loading="lazy">
-                    <h2>Charmeleon</h2>
-                    <p><strong>Nº:</strong> 005</p>
-                    <p><strong>Tipo:</strong> Fogo</p>
-                    <p><strong>Peso:</strong> 19 kg</p>
-                    <p><strong>Altura:</strong> 1,1 m</p>
-                    <p class="descricao">
-                        <strong>Pokemon Chamas:</strong><br>
-                        Charmeleon impiedosamente destrói seus inimigos usando suas garras 
-                        afiadas. Se ele encontrar um adversário forte, verifica-se agressivo.
-                        Neste estado animado, a chama na ponta da cauda se inflama com uma cor branca azulada.
-                    </p>
-                </article>
-                <!-- charizard -->
-                <article class="pokemon" data-name="Charizard" data-type="fire flying">
-                    <input type="radio" id="zard-form" name="charizard-form" checked>
-                    <input type="radio" id="megazardx-form" name="charizard-form">
-                    <input type="radio" id="megazardy-form" name="charizard-form">
-                    <input type="radio" id="maxzard-form" name="charizard-form">
-
-                    <div class="pkm-header">
-                    <div id="charizard-img">
-                        <img src="images/charizard.png" class="zard" alt="Charizard">
-                        <img src="images/mega charizard x.png" class="megazardx" alt="mega Charizard X" loading="lazy">
-                        <img src="images/mega charizard y.png" class="megazardy" alt="mega Charizard Y" loading="lazy">
-                        <img src="images/gigantamax charizard.png" class="maxzard" alt="Gigantamax Charizard" loading="lazy">
-                    </div>
-                    <h2>Charizard</h2>
-                    <p><strong>Nº:</strong> 003</p>
-
-                </div>
-                <div class="form-buttons">
-                    <!-- Inputs para selecionar a forma -->
-                    <label for="zard-form">Forma Basica</label><br>
-
-                    <label for="megazardx-form">Mega Charizard X</label><br>
-
-                    <label for="megazardy-form">Mega Charizard Y</label><br>
-
-                    <label for="maxzard-form">Gigantamax Charizard</label>
-                </div>
-                    
-                    <div id="charizard-desc">
-                        <div id="desc-zard">
-                            <p><strong>Tipo:</strong> Fogo / Voador</p>
-                            <p><strong>Peso:</strong> 90,5 kg</p>
-                            <p><strong>Altura:</strong> 1,7 m</p>
-                            <p class="descricao">
-                                <strong>Pokemon Chamas:</strong><br>
-                                Charizard voa pelo céu à procura de oponentes poderosos.
-                                Aspira fogo de temperaturas tão altas que derrete qualquer coisa,
-                                entretanto, esse pokémon nunca virará seu hálito ardente em oponentes
-                                mas fracos que ele
-                            </p>
-                        </div>
-                        <div id="desc-megazardx" class="pokemon fire type2-dragon mega">
-                            <h3><strong>Forma: </strong>Mega X</h3>
-                            <p><strong>Tipo:</strong> Fogo / Dragão</p>
-                            <p><strong>Peso:</strong> 100,7 kg</p>
-                            <p><strong>Altura:</strong> 1,7 m</p>
-                            <p class="descricao">
-                                <strong>Pokemon Chamas:</strong><br>
-                                O poder avassalador que preenche todo o seu corpo faz
-                                com que ele fique preto e crie intensas chamas azuis.
-                            </p>
-                        </div>
-                        <div id="desc-megazardy" class="mega">
-                            <h3><strong>Forma: </strong>Mega Y</h3>
-                            <p><strong>Tipo:</strong> Fogo / Voador</p>
-                            <p><strong>Peso:</strong> 100,5 kg</p>
-                            <p><strong>Altura:</strong> 1,7 m</p>
-                            <p class="descricao">
-                                <strong>Pokemon Chamas:</strong><br>
-                                Seu vínculo com seu Trainer é a fonte de seu poder.
-                                Ele ostenta velocidade e manobrabilidade maiores
-                                que as de um caça a jato.<br>
-                            </p>
-                        </div>
-                        <div id="desc-maxzard" class="gigantamax">
-                            <h3><strong>Forma: </strong>Gigantamax</h3>
-                            <p><strong>Tipo:</strong> Fogo / Voador</p>
-                            <p><strong>Peso:</strong> ??? kg</p>
-                            <p><strong>Altura:</strong> ??? m</p>
-                            <p class="descricao">
-                                <strong>Pokemon Chamas:</strong><br>
-                                A chama dentro de seu corpo queima mais quente
-                                que 3.600 graus Fahrenheit. Quando Charizard
-                                ruge, essa temperatura sobe ainda mais.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-                <article class="pokemon" data-name="Mew" data-type="psychic">
-                    <img src="images/mew.png" alt="Mew" loading="lazy">
-                    <h2>Mew</h2>
-                        <p><strong>Nº:</strong> 151</p>
-                        <p><strong>Tipo:</strong> Psíquico</p>
-                        <p><strong>Peso:</strong> 90,5 kg</p>
-                        <p><strong>Altura:</strong> 1,7 m</p>
-                        <p class="descricao">
-                            <strong>Pokemon Nova Espécie:</strong><br>
-                                Dizem que Mew possui o DNA de todos os Pokémon. 
-                                Ele pode ficar invisível sempre que quiser, por isso 
-                                passa despercebido sempre que alguém se aproxima dele. 
-                        </p>
-              </article>
-            </ul>
-            <h2 id="johto">Johto</h2>
-            <ul class="pokedex-list">
-                <article class="pokemon" data-name="Pichu" data-type="electric">
-                    <img src="images/pichu.png.png" alt="Pichu" loading="lazy">
-                    <h2>Pichu</h2>
-                        <p><strong>Nº:</strong> 172</p>
-                        <p><strong>Tipo:</strong> Eletrico</p>
-                        <p><strong>Peso:</strong> 2,0 kg</p>
-                        <p><strong>Altura:</strong> 0,3 m</p>
-                        <p class="descricao">
-                            <strong>Pokemon Pequeno Rato:</strong><br>
-                            Pichu carrega sua eletricidade com mais facilidade em 
-                            dias de trovoada ou quando o ar está muito seco.
-                            Você pode ouvir o estalar da eletricidade estática saindo deste Pokémon.
-                        </p>
-                </article>
-            </ul>
-            <h2 id="hoenn">Hoenn</h2>
-            <ul class="pokedex-list">
-                <article class="pokemon" data-name="Rayquasa" data-type="dragon flying">
-                    <img src="images/rayquaza.png" alt="Rayquasa" loading="lazy">
-                    <h2>Rayquasa</h2>
-                        <p><strong>Nº:</strong> 384</p>
-                        <p><strong>Tipo:</strong> Dragão / Voador</p>
-                        <p><strong>Peso:</strong> 206,5 kg</p>
-                        <p><strong>Altura:</strong> 7 m</p>
-                        <p class="descricao">
-                            <strong>Pokemon Céu:</strong><br>
-                            Diz-se que Rayquaza viveu centenas de milhões de anos. Permanecem lendas 
-                            sobre como isso pôs fim ao confronto entre Kyogre e Groudon.
-                        </p>
-                </article>
-                <article class="pokemon" data-name="Jirachi" data-type="metal psychic">
-                    <img src="images/jirachi.png" alt="Jirachi" loading="lazy">
-                    <h2>Jirachi</h2>
-                        <p><strong>Nº:</strong> 385</p>
-                        <p><strong>Tipo:</strong> Metal / Psíquico</p>
-                        <p><strong>Peso:</strong> 131 kg</p>
-                        <p><strong>Altura:</strong> 0,3 m</p>
-                        <p class="descricao">
-                            <strong>Pokemon Desejo:</strong><br>
-                            Uma lenda afirma que Jirachi realizará qualquer desejo escrito
-                            em notas presas à sua cabeça quando acordar. Se este Pokémon sentir
-                            perigo, ele lutará sem acordar.
-                    </p>
-                </article>
-            </ul>
-            <h2 id="sinnoh">Sinnoh</h2>
-            <ul class="pokedex-list">
-                <article class="pokemon" data-name="Manaphy" data-type="water">
-                    <img src="images/Manaphy.png" alt="Manaphy" loading="lazy">
-                    <h2>Manaphy</h2>
-                        <p><strong>Nº:</strong> 490</p>
-                        <p><strong>Tipo:</strong> Água</p>
-                        <p><strong>Peso:</strong> 1,4 kg</p>
-                        <p><strong>Altura:</strong> 0,3 m</p>
-                        <p class="descricao">
-                            <strong>Pokemon Navegação Maritima:</strong><br>
-                            Ele começa sua vida com um poder maravilhoso que lhe permite se relacionar
-                            com qualquer tipo de Pokémon.
-                    </p>
-                </article>
-            </ul>
-            <h2 id="unova">Unova</h2>
-            <ul class="pokedex-list">
-                <article class="pokemon" data-name="Victini" data-type="fire psychic">
-                    <img src="images/victini.png" alt="Victini" loading="lazy">
-                    <h2>Victini</h2>
-                        <p><strong>Nº:</strong> 494</p>
-                        <p><strong>Tipo:</strong> Fogo / Psíquico</p>
-                        <p><strong>Peso:</strong> 4 kg</p>
-                        <p><strong>Altura:</strong> 0,4 m</p>
-                        <p class="descricao">
-                            <strong>Pokemon Vitoria:</strong><br>
-                            Ao compartilhar a energia infinita que cria, todo o corpo desse ser 
-                            transbordará de poder.
-                    </p>
-                </article>
-            </ul>
-            <h2 id="kalos">Kalos</h2>
-            <ul class="pokedex-list">
-                <article class="pokemon" data-name="Greninja" data-type="water dark">
-                    <img src="images/greninja.png" alt="Greninja" loading="lazy">
-                    <h2>Greninja</h2>
-                    <p><strong>Nº:</strong> 658</p>
-                    <p><strong>Tipo:</strong> Água / Sombrio</p>
-                    <p><strong>Peso:</strong> 40 kg</p>
-                    <p><strong>Altura:</strong> 1,5 m</p>
-                    <p class="descricao">
-                        <strong>Pokemon Ninja:</strong><br>
-                        Greninja se move com a velocidade e graça de um ninja,
-                        usando movimentos rápidos para confundir seus inimigos enquanto 
-                        os corta com estrelas ninja feitas de água comprimida,
-                        essas estrelas ninja são afiadas o suficiente para partir metal
-                    </p>
-                </article>
-            </ul>
-            <br><h2 id="alola">Alola</h2>
-            <ul class="pokedex-list">
-                <article class="pokemon" data-name="Zeraora" data-type="electric">
-                    <img src="images/zeraora.png" alt="Zeraora" loading="lazy">
-                    <h2>Zeraora</h2>
-                        <p><strong>Nº:</strong> 807</p>
-                        <p><strong>Tipo:</strong> Eletrico</p>
-                        <p><strong>Peso:</strong> 44,5 kg</p>
-                        <p><strong>Altura:</strong> 1,5 m</p>
-                        <p class="descricao">
-                            <strong>Pokemon Trovoada:</strong><br>
-                            Ele eletrifica suas garras e destroi seus oponentes com elas.
-                            Mesmo que eles desviem do ataque, serão eletrocutados pelas faíscas voadoras
-                        </p>
-                </article>
-            </ul>
-            <h2 id="galar">Galar</h2>
-            <ul class="pokedex-list">
-                <article class="pokemon" data-name="Dragapult" data-type="dragon ghost">
-                    <img src="images/dragapult.png" alt="Dragapult" loading="lazy">
-                    <h2>Dragapult</h2>
-                        <p><strong>Nº:</strong> 887</p>
-                        <p><strong>Tipo:</strong> Dragão / Fantasma</p>
-                        <p><strong>Peso:</strong> 50 kg</p>
-                        <p><strong>Altura:</strong> 3 m</p>
-                        <p class="descricao">
-                            <strong>Pokemon Furtivo:</strong><br>
-                            Quando não está lutando, mantém Dreepy nos buracos de seus chifres.
-                            Assim que a luta começa, ele lança os Dreepy como mísseis supersônicos.
-                        </p>
-                </article>
-            </ul>
-            <h2 id="hisui">Hisui</h2>
-            <ul class="pokedex-list">
-            <!-- basculegion -->
-                <article class="pokemon" data-name="Basculegion" data-type="water ghost">
-                    <input type="radio" id="men-form" name="basculegion-form" checked>
-                    <input type="radio" id="women-form" name="basculegion-form">
-
-                    <div class="pkm-header">
-                        <div id="basculegion-img">
-                        <img src="images/Basculegion macho.png" class="men" alt="Basculegion Macho" loading="lazy">
-                        <img src="images/Basculegion femea.png" class="women" alt="Basculegion Femea" loading="lazy">
-                        </div>  
-                    </div>
-
-                    <h2>Basculegion</h2>
-
-                    <div class="form-buttons">
-                        <!-- Inputs para selecionar a forma -->
-                        <label for="men-form">Macho</label><br>
-                        
-
-                        <label for="women-form">Fêmea</label>
-                    </div>
-
-                    <div id="basculegion-desc">
-                        <div id="desc-men">
-                            <h3><strong>Genero: </strong>Macho</h3>
-                            <p><strong>Nº:</strong> 902</p>
-                            <p><strong>Tipo:</strong> Água / Fantasma</p>
-                            <p><strong>Peso:</strong> 110 kg</p>
-                            <p><strong>Altura:</strong> 3 m</p>
-                            <p class="descricao">
-                                <strong>Pokemon Peixe Grande:</strong><br>
-                                Este Pokémon está escondido nas almas de seus companheiros que 
-                                pereceram durante uma jornada punitiva até o rio onde nasceram.
-                            </p>
-                        </div>
-                        <div id="desc-women">
-                            <h3><strong>Genero: </strong>Femea</h3>
-                            <p><strong>Nº:</strong> 902</p>
-                            <p><strong>Tipo:</strong> Água / Fantasma</p>
-                            <p><strong>Peso:</strong> 110 kg</p>
-                            <p><strong>Altura:</strong> 3 m</p>
-                            <p class="descricao">
-                                <strong>Pokemon Peixe Grande:</strong><br>
-                                Ela pode afligir um alvo com ilusões aterrorizantes que estão sob 
-                                seu controle. Quanto mais profunda a tristeza nas almas de seus
-                                amigos, mais pálido Basculegion se torna.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-            </ul>
-            <h2 id="paldeia">Paldeia</h2>
-            <ul class="pokedex-list">
-            <!-- Tatsugiri -->
-                <article class="pokemon" data-name="Tatsugiri" data-type="water dragon">
-                <input type="radio" id="curly-form" name="tatsugiri-form" checked> 
-                <input type="radio" id="droopy-form" name="tatsugiri-form"> 
-                <input type="radio" id="stretchy-form" name="tatsugiri-form">
-
-                <div class="pkm-header">
-                <div id="tatsugiri-img">
-                    <img src="images/tatsugiri amarelo.png" alt="Tatsugiri Laranja" class="curly" loading="lazy"> 
-                    <img src="images/tatsugiri rosa.png" alt="Tatsugiri Rosa" class="droopy" loading="lazy"> 
-                    <img src="images/tatsugiri laranja.png" alt="Tatsugiri Amarelo" class="stretchy" loading="lazy"> 
-                </div>
-                <h2>Tatsugiri</h2>
-                <p><strong>Nº:</strong> 978</p>
-
-            </div>
-            <div class="form-buttons">
-                <!-- Inputs para selecionar a forma -->
-                <label for="curly-form">Forma Curly</label> <br>
-                        
-                <label for="droopy-form">Forma Droopy</label> <br>
-                
-                <label for="stretchy-form">Forma Stretchy</label> 
-            </div>
+.mega {
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, #32cd32, #1e90ff, #ff69b4, #ffd700) 1;
+}
 
 
-                    <div id="tatsugiri-desc">
-                        <div id="desc-curly">
-                            <h3><strong>Forma </strong>  Curly</h3>
-                            <p><strong>Nº:</strong> 978</p>
-                            <p><strong>Tipo:</strong> Água / Dragão</p>
-                            <p><strong>Peso:</strong> 8 kg</p>
-                            <p><strong>Altura:</strong> 0,3 m</p>
-                            <p class="descricao">
-                                <strong>Pokemon Mimico:</strong><br>
-                                Este é um pequeno Pokémon dragão 
-                                vive dentro da foz do Dondozo para se proteger dos inimigos externos.
-                            </p>
-                        </div>
 
-                        <div id="desc-droopy">
-                            <h3><strong>Forma </strong> Droopy</h3>
-                            <p><strong>Nº:</strong> 978</p>
-                            <p><strong>Tipo:</strong> Água / Dragão</p>
-                            <p><strong>Peso:</strong> 8 kg</p>
-                            <p><strong>Altura:</strong> 0,3 m</p>
-                            <p class="descricao">
-                                <strong>Pokemon Mimico:</strong><br>
-                                As diferentes cores e padrões desta espécie
-                                são aparentemente o resultado da mudança de Tatsugiri para se
-                                adequar às preferências da presa que atrai.
-                        </div>
 
-                        <div id="desc-stretchy">
-                            <h3><strong>Forma </strong>  Stretchy</h3>
-                            <p><strong>Nº:</strong> 978</p>
-                            <p><strong>Tipo:</strong> Água / Dragão</p>
-                            <p><strong>Peso:</strong> 8 kg</p>
-                            <p><strong>Altura:</strong> 0,3 m</p>
-                            <p class="descricao">
-                                <strong>Pokemon Mimico:</strong><br>
-                                Pokémon pássaros são suas principais presas. 
-                                Pokémon sabe que é fraco, por isso caça com um parceiro.
-                        </div>
+/* ========================= */
+/* Gigantamax Pokémon */
+/* ========================= */
 
-                    </div>
-                </article>
-            <!-- Adicione mais Pokémons-->
-            </ul>
-        </main>
-        <footer>
-            <p>&copy; 2026 Pokedex. Todos os direitos reservados.</p>
-        </footer>
-    </body>
-</html>
+.gigantamax {
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, #ff69b4, #ff1493, #ffe4e1) 1;
+}
+
+.pokemon {
+    max-height: 150px; /*Altura para mostrar só a imagem e nome*/
+    overflow: hidden; /*Esconde o resto*/
+    transition: max-width 0.5s ease-in-out, box-shadow 0.7s ease; /*Animação pra crescer*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px; /*Borda arredondada*/
+    position: relative;
+    cursor: pointer; /*Mostra que é clicavel*/
+    --cor1: #ccc;
+    --cor2: var(--cor1);
+    --text: #000;
+    background: linear-gradient(90deg, var(--cor1) 50%, var(--cor2) 50%);
+    color: var(--text);
+    text-align: center;
+    border: 1px solid #c01f9f;
+    padding: 10px;
+}
+
+.pokemon:hover{
+    max-height: 1000px; /*Tamanho grande para aparecer tudo*/
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /*Sombra*/
+    z-index: 10;/*Garante que cresça e fique em cima dos outros*/
+}
+
+.pokemon p, .pokemon label, .pokemon .form-buttons, .pokemon .descricao{
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+}
+
+.pokemon:hover p, .pokemon:hover label, .pokemon:hover .form-buttons, .pokemon:hover .descricao{
+    opacity: 1;
+    transition-delay: 0.2s; /*Revela o texto só quando o card abrir*/
+}
+
+.pokemon input[type="radio"]{
+    display: none;
+}
+
+
+
+.normal   { --cor1: #e2e2e2; }
+.fire     { --cor1: #ff6961; }
+.water    { --cor1: #29abe2; }
+.grass    { --cor1: #77dd77; }
+.electric { --cor1: #ffff39; }
+.ice      { --cor1: #77fff8; }
+.ground   { --cor1: #b89b54; }
+.flying   { --cor1: #cfe8ffe0; }
+.psychic  { --cor1: #cd6fff; }
+.bug      { --cor1: #bdd314; }
+.steel    { --cor1: #a7a7a7; }
+.fairy    { --cor1: #ff80ea; }
+
+.fighting,
+.poison,
+.rock,
+.dragon,
+.dark {
+    --text: #fff;
+}
+
+.fighting { --cor1: #5f1916; }
+.poison   { --cor1: #7500a3; }
+.rock     { --cor1: #5e3b13; }
+.dragon   { --cor1: #713bd4; }
+.dark     { --cor1: #424242; }
+.ghost    { --cor1: #9e84b6; }
+
+.type2-normal   { --cor2: #e2e2e2; }
+.type2-fire     { --cor2: #ff6961; }
+.type2-water    { --cor2: #29abe2; }
+.type2-grass    { --cor2: #77dd77; }
+.type2-electric { --cor2: #ffff39; }
+.type2-ice      { --cor2: #77fff8; }
+.type2-fighting { --cor2: #5f1916; }
+.type2-poison   { --cor2: #7500a3; }
+.type2-ground   { --cor2: #b89b54; }
+.type2-flying   { --cor2: #cfe8ffe0; }
+.type2-psychic  { --cor2: #cd6fff; }
+.type2-bug      { --cor2: #bdd314; }
+.type2-rock     { --cor2: #5e3b13; }
+.type2-ghost    { --cor2: #9e84b6; }
+.type2-dragon   { --cor2: #713bd4; }
+.type2-dark     { --cor2: #424242; }
+.type2-steel    { --cor2: #a7a7a7; }
+.type2-fairy    { --cor2: #ff80ea; }
+
+[class*="type2-dark"],
+[class*="type2-dragon"],
+[class*="type2-rock"],
+[class*="type2-poison"],
+[class*="type2-fighting"] {
+    --text: #fff;
+}
+
+.flying.type2-dragon, .dragon.type2-flying {
+    --text: red;
+}
+
+
+/*Tatsugiri*/
+/* Esconder descrições */
+#desc-curly, #desc-stretchy, #desc-droopy {
+    display: none;
+}
+
+/* Esconder imagens */
+#tatsugiri-img img {
+    display: none;
+    width: 150px;
+    height: auto;
+}
+
+/* Mostrar imagem */
+#droopy-form:checked ~ .pkm-header #tatsugiri-img .droopy {
+    display: block;
+}
+
+#stretchy-form:checked ~ .pkm-header #tatsugiri-img .stretchy {
+    display: block;
+}
+
+#curly-form:checked ~ .pkm-header #tatsugiri-img .curly {
+    display: block;
+}
+
+/* Mostrar descrição */
+#droopy-form:checked ~ #tatsugiri-desc #desc-droopy {
+    display: block;
+}
+
+#stretchy-form:checked ~ #tatsugiri-desc #desc-stretchy {
+    display: block;
+}
+
+#curly-form:checked ~ #tatsugiri-desc #desc-curly {
+    display: block;
+}
+
+/*Basculegion*/
+/* Esconder descrições */
+#desc-men, #desc-women {
+    display: none;
+}
+
+/* Esconder imagens */
+#basculegion-img img {
+    display: none;
+    width: 150px;
+    height: auto;
+}
+
+/* Mostrar imagem */
+#men-form:checked ~ .pkm-header #basculegion-img .men {
+    display: block;
+}
+
+#women-form:checked ~ .pkm-header #basculegion-img .women {
+    display: block;
+}
+
+/* Mostrar descrição */
+#men-form:checked ~ #basculegion-desc #desc-men {
+    display: block;
+}
+
+#women-form:checked ~ #basculegion-desc #desc-women {
+    display: block;
+}
+
+/*Venusaur*/
+/* Esconder descrições */
+#desc-venu, #desc-megavenu, #desc-maxvenu {
+    display: none;
+}
+
+/* Esconder imagens */
+#venusaur-img img {
+    display: none;
+    width: 150px;
+    height: auto;
+}
+
+/* Mostrar imagem */
+#venu-form:checked ~ .pkm-header #venusaur-img .venu {
+    display: block;
+}
+
+#megavenu-form:checked ~ .pkm-header #venusaur-img .megavenu {
+    display: block;
+}
+
+#maxvenu-form:checked ~ .pkm-header #venusaur-img .maxvenu {
+    display: block;
+}
+
+/* Mostrar descrição */
+#venu-form:checked ~ #venusaur-desc #desc-venu {
+    display: block;
+}
+
+#megavenu-form:checked ~ #venusaur-desc #desc-megavenu {
+    display: block;
+}
+
+#maxvenu-form:checked ~ #venusaur-desc #desc-maxvenu {
+    display: block;
+}
+
+/*Charizard*/
+/* Esconder descrições */
+#desc-zard, #desc-megazardx, #desc-megazardy, #desc-maxzard {
+    display: none;
+}
+
+/* Esconder imagens */
+#charizard-img img {
+    display: none;
+    width: 150px;
+    height: auto;
+}
+
+/* Mostrar imagem */
+#zard-form:checked ~ .pkm-header #charizard-img .zard {
+    display: block;
+}
+
+#megazardx-form:checked ~ .pkm-header #charizard-img .megazardx {
+    display: block;
+}
+
+#megazardy-form:checked ~ .pkm-header #charizard-img .megazardy {
+    display: block;
+}
+
+#maxzard-form:checked ~ .pkm-header #charizard-img .maxzard {
+    display: block;
+}
+
+/* Mostrar descrição*/
+#zard-form:checked ~ #charizard-desc #desc-zard {
+    display: block;
+}
+
+#megazardx-form:checked ~ #charizard-desc #desc-megazardx {
+    display: block;
+}
+
+#megazardy-form:checked ~ #charizard-desc #desc-megazardy {
+    display: block;
+}
+
+#maxzard-form:checked ~ #charizard-desc #desc-maxzard {
+    display: block;
+}
+
+.pokemon:has(#zard-form:checked) {
+    --cor1: #ff6961;
+    --cor2: #cfe8ffe0;
+    --text: #000;
+    border: 1px solid #c01f9f;
+}
+
+.pokemon:has(#megazardx-form:checked) {
+    --cor1: #ff6961;
+    --cor2: #713bd4;
+    --text: #fff;
+
+    border: 5px solid transparent;
+    border-image: linear-gradient(
+        45deg,
+        #32cd32,
+        #1e90ff,
+        #ff69b4,
+        #ffd700
+    ) 1;
+}
+
+.pokemon:has(#megazardy-form:checked) {
+    --cor1: #ff6961;
+    --cor2: #cfe8ffe0;
+    --text: #000;
+
+    border: 5px solid transparent;
+    border-image: linear-gradient(
+        45deg,
+        #32cd32,
+        #1e90ff,
+        #ff69b4,
+        #ffd700
+    ) 1;
+}
+
+.pokemon:has(#maxzard-form:checked) {
+    --cor1: #ff6961;
+    --cor2: #cfe8ffe0;
+    --text: #000;
+
+    border: 5px solid transparent;
+    border-image: linear-gradient(
+        45deg,
+        #ff69b4,
+        #ff1493,
+        #ffe4e1
+    ) 1;
+}
+
+/* Restante do código existente */
+.site-header {
+    background-color: aqua;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: black;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+.pokedex-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: azure;
+}
+
+h2 {
+    margin: 5px 0;
+    border-bottom: 2px solid #C12225;
+    padding-bottom: 5px;
+}
+
+.descricao {
+    font-size: 0.9em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:target{
+    scroll-margin-top: 100px;
+    outline: 3px solid #C12225;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+input[type="radio"]:checked + label {
+    background: #C12225;
+    color: white;
+}
+
+/* Quando o usuário navegar pelo teclado (Tab), o label ganha um contorno para mostrar onde ele está */
+input[type="radio"]:focus + label {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+.form-description {
+    background: linear-gradient(90deg, var(--cor1) 50%, var(--cor2) 50%);
+    color: var(--text);
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+
