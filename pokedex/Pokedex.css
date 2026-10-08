@@ -69,18 +69,25 @@ body {
 
 
 
-.normal   { --cor1: #e2e2e2; }
-.fire     { --cor1: #ff6961; }
-.water    { --cor1: #29abe2; }
-.grass    { --cor1: #77dd77; }
-.electric { --cor1: #ffff39; }
-.ice      { --cor1: #77fff8; }
-.ground   { --cor1: #b89b54; }
-.flying   { --cor1: #cfe8ffe0; }
-.psychic  { --cor1: #cd6fff; }
-.bug      { --cor1: #bdd314; }
-.steel    { --cor1: #a7a7a7; }
-.fairy    { --cor1: #ff80ea; }
+.normal   { --cor1: #9fa17b; }
+.fire     { --cor1: #e97233; }
+.water    { --cor1: #5983c4; }
+.grass    { --cor1: #5ea249; }
+.electric { --cor1: #f3c42e; }
+.ice      { --cor1: #86cccb; }
+.ground   { --cor1: #cbaf63; }
+.flying   { --cor1: #827bba; }
+.psychic  { --cor1: #e6507a; }
+.bug      { --cor1: #869a27; }
+.steel    { --cor1: #a5a1c0; }
+.fairy    { --cor1: #e493b8; }
+.fighting { --cor1: #b8463c; }
+.poison   { --cor1: #844183; }
+.rock     { --cor1: #b09b45; }
+.dragon   { --cor1: #4d51a6; }
+.dark     { --cor1: #554338; }
+.ghost    { --cor1: #5e4d75; }
+
 
 .fighting,
 .poison,
@@ -90,31 +97,25 @@ body {
     --text: #fff;
 }
 
-.fighting { --cor1: #5f1916; }
-.poison   { --cor1: #7500a3; }
-.rock     { --cor1: #5e3b13; }
-.dragon   { --cor1: #713bd4; }
-.dark     { --cor1: #424242; }
-.ghost    { --cor1: #9e84b6; }
 
-.type2-normal   { --cor2: #e2e2e2; }
-.type2-fire     { --cor2: #ff6961; }
-.type2-water    { --cor2: #29abe2; }
-.type2-grass    { --cor2: #77dd77; }
-.type2-electric { --cor2: #ffff39; }
-.type2-ice      { --cor2: #77fff8; }
-.type2-fighting { --cor2: #5f1916; }
-.type2-poison   { --cor2: #7500a3; }
-.type2-ground   { --cor2: #b89b54; }
-.type2-flying   { --cor2: #cfe8ffe0; }
-.type2-psychic  { --cor2: #cd6fff; }
-.type2-bug      { --cor2: #bdd314; }
-.type2-rock     { --cor2: #5e3b13; }
-.type2-ghost    { --cor2: #9e84b6; }
-.type2-dragon   { --cor2: #713bd4; }
-.type2-dark     { --cor2: #424242; }
-.type2-steel    { --cor2: #a7a7a7; }
-.type2-fairy    { --cor2: #ff80ea; }
+.type2-normal   { --cor2: #9fa17b; }
+.type2-fire     { --cor2: #e97233; }
+.type2-water    { --cor2: #5983c4; }
+.type2-grass    { --cor2: #5ea249; }
+.type2-electric { --cor2: #f3c42e; }
+.type2-ice      { --cor2: #86cccb; }
+.type2-fighting { --cor2: #b8463c; }
+.type2-poison   { --cor2: #844183; }
+.type2-ground   { --cor2: #cbaf63; }
+.type2-flying   { --cor2: #827bba; }
+.type2-psychic  { --cor2: #e6507a; }
+.type2-bug      { --cor2: #869a27; }
+.type2-rock     { --cor2: #b09b45; }
+.type2-ghost    { --cor2: #5e4d75; }
+.type2-dragon   { --cor2: #4d51a6; }
+.type2-dark     { --cor2: #554338; }
+.type2-steel    { --cor2: #a5a1c0; }
+.type2-fairy    { --cor2: #e493b8; }
 
 [class*="type2-dark"],
 [class*="type2-dragon"],
@@ -286,15 +287,15 @@ body {
 }
 
 .pokemon:has(#zard-form:checked) {
-    --cor1: #ff6961;
-    --cor2: #cfe8ffe0;
+    --cor1: #e97233;
+    --cor2: #827bba;
     --text: #000;
     border: 1px solid #c01f9f;
 }
 
 .pokemon:has(#megazardx-form:checked) {
-    --cor1: #ff6961;
-    --cor2: #713bd4;
+    --cor1:  #e97233;
+    --cor2: #4d51a6;
     --text: #fff;
 
     border: 5px solid transparent;
@@ -308,8 +309,8 @@ body {
 }
 
 .pokemon:has(#megazardy-form:checked) {
-    --cor1: #ff6961;
-    --cor2: #cfe8ffe0;
+    --cor1:  #e97233;
+    --cor2: #827bba;
     --text: #000;
 
     border: 5px solid transparent;
@@ -323,8 +324,8 @@ body {
 }
 
 .pokemon:has(#maxzard-form:checked) {
-    --cor1: #ff6961;
-    --cor2: #cfe8ffe0;
+    --cor1:  #e97233;
+    --cor2: #827bba;
     --text: #000;
 
     border: 5px solid transparent;
